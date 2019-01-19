@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/event_spec_layout_id"
+    android:background="@color/colorDark">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/event_type"
+        android:text="test"
+        ></TextView>
+    <ImageView
+        android:id="@+id/event_type_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/policeman" />
+
+
+    <LinearLayout
+        android:layout_above="@+id/event_send"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp"
+        >
+        <ImageView
+            android:id="@+id/event_camera_img"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:src="@drawable/camera" />
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorPrimaryDark"
+            />
+        <EditText
+            android:id="@+id/event_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textinputborder"
+            android:layout_margin="15dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:hint="Enter your comment here!" >
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/event_send"
+        android:layout_height="100dp"
+        >
+        <Button
+            android:id="@+id/event_back_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_buttons"
+            android:layout_margin="15dp"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            >
+        </Button>
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorPrimaryDark"
+            />
+        <Button
+            android:id="@+id/event_send_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_buttons"
+            android:layout_margin="15dp"
+            android:text="Send"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
